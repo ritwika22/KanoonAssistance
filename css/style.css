@@ -8,6 +8,7 @@
     --white-color:#fff;
     --black-color:#000;
     --hover-color:#E4D6A7;
+    --kanoon-bg-clr:#fcf5ef;
 }
 body{
     margin: 0;
@@ -141,4 +142,152 @@ a{
     font-size: 20px;
     color: var(--white-color);
     text-align: center;
+}
+
+
+/* |||BANNER ENDS||| */
+
+
+/* |||KANOON STARTS||| */
+
+
+.kanoon-area{
+    background-color: var(--kanoon-bg-clr);
+    padding: 80px;
+    text-align: center;
+}
+.kanoon-box{
+    width: 45%;
+    margin: 0 auto;
+}
+.kanoon-box>h4{
+    margin-top: 0;
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+.kanoon-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.kanoon-head>span{
+    color: var(--primary-color);
+    font-size: 50px;
+}
+.kanoon-head>h3{
+    font-size: 45px;
+    margin: 10px;
+    color: var(--secondary-color);
+}
+.kanoon-box>p{
+    color: var(--secondary-color);
+    font-size: 15px;
+    line-height: 2;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+/* |||KANOON ENDS||| */
+
+
+/* |||OFFER STARTS||| */
+
+
+
+.offer-area{
+    padding: 80px;
+    background-image: url(../images/bare-act-bg.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.offer-area>h3{
+    color: var(--white-color);
+    margin-top: 0;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+    font-family:'Cinzel';
+    position: relative;
+}
+.offer-area>h3::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: var(--hover-color);
+    width: 100%;
+    height: 2px;
+    top: 60px;
+}
+.offer-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    cursor: pointer;
+}
+.offer-box{
+    aspect-ratio: 1.5;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.offer-box:hover .maroon-box{
+    visibility: visible;
+    opacity: 0.9;
+}
+.offer-one{
+    background-image: url(../images/online.jpg);
+}
+.offer-two{
+    background-image: url(../images/in-office.jpg);
+}
+.offer-three{
+    background-image: url(../images/drafting.jpg);
+}
+.offer-four{
+    background-image: url(../images/bare-act.jpg);
+}
+.offer-five{
+    background-image: url(../images/websites.jpg);
+}
+.offer-six{
+    background-image: url(../images/legal-news.jpg);
+}
+.maroon-box{
+    background-color: #7a423f;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.border-box{
+    --offset: 45px;
+    border: 1px solid var(--hover-color);
+    text-align: center;
+    /* padding: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - var(--offset));
+    position: absolute;
+    top: calc(var(--offset) / 2);
+    left: calc(var(--offset) / 2);
+    width: calc(100% - var(--offset));
+}
+.border-box>p{
+    font-size: 20px;
+    color: var(--white-color);
 }

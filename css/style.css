@@ -420,7 +420,8 @@ a{
 .white-box:hover .maroon-border>span{
     color: var(--hover-color);
 }
-.white-box:hover .maroon-border>span::before{
+.white-box:hover .maroon-border>span::before,
+.white-box:hover .maroon-border>i::after{
     opacity: 1;
 }
 .white-box:hover .maroon-border>a{
@@ -490,7 +491,8 @@ a{
     /* background-color: #875046;
     border-radius: 50%; */
 }
-.maroon-border>span::before{
+.maroon-border>span::before,
+.maroon-border>i::after{
     content: "";
     background-color: #cd9389;
     position: absolute;
@@ -508,6 +510,7 @@ a{
     color: var(--primary-color);
     font-size: 50px;
     transition: 0.5s all ease-in-out;
+    position: relative;
 }
 .maroon-border>h3{
     color: var(--secondary-color);

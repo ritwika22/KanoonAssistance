@@ -17,6 +17,12 @@
     --form-color:#f0e3d7;
     --form-text-color:#d58f76;
 }
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -733,11 +739,12 @@ form>button:hover{
 
 
 /* |||MAP STARTS||| */
-
-.gmap_iframe{
-    filter: grayscale(100%) invert(92%) contrast(83%);
+.map-area{
+    height: 400px;
 }
-
+.map-area iframe{
+    filter: grayscale(20%) invert(100%) contrast(80%) hue-rotate(180deg);
+}
 
 /* |||MAP ENDS||| */
 

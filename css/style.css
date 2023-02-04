@@ -10,6 +10,8 @@
     --hover-color:#E4D6A7;
     --kanoon-bg-clr:#fcf5ef;
     --base-color:#7a423f;
+    --form-color:#f0e3d7;
+    --form-text-color:#d58f76;
 }
 body{
     margin: 0;
@@ -549,6 +551,9 @@ a{
     position: relative;
     background-color: var(--base-color);
     padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .choose-box::before{
     position: absolute;
@@ -577,6 +582,7 @@ a{
     font-size: 35px;
     margin-top: 15px;
     font-family: 'Cinzel';
+    margin-bottom: 15px;
 }
 .choose-box>ul{
     padding-left: 0;
@@ -586,7 +592,7 @@ a{
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 8px 0;
+    padding: 15px 0;
     color: var(--white-color);
     font-size: 17px;
 }
@@ -629,7 +635,70 @@ a{
     font-size: 32px;
     text-align: center;
 }
+.form{
+    margin: 0 auto;
+    width: 60%;
+}
+form>input,
+form>textarea,
+form>button{
+    border: none;
+    outline: none;
+    background-color: var(--form-color);
+    padding: 20px;
+    margin: 5px 0;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    border-radius: 3px;
+    color: var(--primary-color);
+    resize: none;
+    font-size: 15px;
+}
+form>input::placeholder,
+form>textarea::placeholder{
+    color: var(--form-text-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+form>button{
+    width: 109%;
+    background-color: var(--base-color);
+    color: var(--white-color);
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+}
+form>button:hover{
+    background-color: var(--primary-color);
+}
+.form-box>p{
+    text-align: center;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+.chat-box{
+    margin: 0 auto;
+    text-align: center;
+}
+.chat-box>a{
+    color: var(--primary-color);
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+}
+.chat-box>a>i{
+    font-size: 20px;
+}
 /* |||CHOOSE ENDS||| */
 
 

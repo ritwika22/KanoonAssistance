@@ -1,0 +1,19 @@
+.offer-box:hover .maroon-box{
+    transform: translateY(0%);
+}
+
+.offer-box:hover .border-box{
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.maroon-box{
+    transform: translateY(-100%);
+    transition: all 0.5s ease-in-out;
+}
+
+.border-box{
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 0.5s ease-in-out 0.35s;
+}

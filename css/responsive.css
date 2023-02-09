@@ -1,0 +1,206 @@
+@media (max-width:430px) {
+    .header-box {
+        display: none;
+    }
+
+    .logo h2 {
+        font-size: 23px;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--primary-color);
+    }
+
+    .sidebar {
+        height: 100%;
+        /* 100% Full-height */
+        width: 0;
+        /* 0 width - change this with JavaScript */
+        position: fixed;
+        /* Stay in place */
+        z-index: 99;
+        /* Stay on top */
+        top: 0;
+        right: 0;
+        background-color: var(--secondary-color);
+        /* Black*/
+        overflow: hidden;
+        /* Disable horizontal scroll */
+        padding-top: 15px;
+        /* Place content 60px from the top */
+        transition: 0.5s;
+        /* 0.5 second transition effect to slide in the sidebar */
+        font-size: 18px;
+    }
+
+    /* The sidebar links */
+    .sidebar a {
+        padding: 12px 8px 12px 32px;
+        text-decoration: none;
+        font-size: 20px;
+        color: var(--form-text-color);
+        display: block;
+        transition: 0.3s;
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidebar a:hover {
+        color: #f1f1f1;
+    }
+
+    /* Position and style the close button (top right corner) */
+    .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    /* The button used to open the sidebar */
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: var(--secondary-color);
+        color: var(--hover-color);
+        padding: 6px 12px;
+        border: none;
+    }
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+
+    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+    #main {
+        transition: opacity .5s;
+        /* If you want a transition effect */
+        padding: 20px;
+    }
+
+
+    .banner-bg {
+        height: 29vh;
+    }
+
+    .banner-content>h1 {
+        font-size: 25px;
+    }
+
+    .arrow-div {
+        bottom: unset;
+        top: 185px;
+    }
+
+    .circle {
+        height: 37px;
+        width: 37px;
+    }
+
+
+    .kanoon-area {
+        padding: 30px;
+        padding-top: 40px;
+    }
+
+    .kanoon-box {
+        width: 100%;
+    }
+
+    .kanoon-box>h4 {
+        font-size: 21px;
+    }
+
+    .kanoon-head {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .kanoon-head>span {
+        font-size: 55px;
+    }
+
+    .kanoon-head>h3 {
+        font-size: 38px;
+        margin: 5px;
+    }
+
+
+    .offer-area{
+        padding: 30px;
+    }
+    .offer-grid{
+        grid-template-columns: 1fr;
+        margin-top: 60px;
+    }
+    .offer-area>h3{
+        font-size: 30px;
+    }
+    .offer-area>h3::after{
+        top: 57px;
+    }
+    .border-box{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    .maroon-box{
+        transform: translateY(0%);
+        opacity: 0.7;
+    }
+    .border-box>p{
+        font-size: 20px;
+    }
+
+
+    .service-area{
+        display: none;
+    }
+
+    .choose-area{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .choose-box{
+        width: 100%;
+        padding: 20px;
+    }
+    .choose-box>h5{
+        font-size: 18px;
+    }
+    .choose-box>h3{
+        font-size: 28px;
+    }
+    .choose-box>ul>li{
+        padding: 12px 0;
+    }
+    .author{
+        margin-top: 10px;
+    }
+    .form-box{
+        width: 100%;
+        padding: 20px;
+    }
+    .form-box>h5{
+        font-size: 18px;
+    }
+    .form-box>h3{
+        font-size: 28px;
+    }
+    .form{
+        width: 100%;
+    }
+    form>input,
+    form>textarea,
+    form>button{
+        padding: 15px;
+    }
+    .chat-box>a{
+        font-size: 18px;
+    }
+    .chat-box>a>i{
+        font-size: 20px;
+    }
+}

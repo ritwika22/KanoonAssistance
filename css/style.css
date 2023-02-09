@@ -32,7 +32,9 @@ body{
 /* |||HEADER STARTS||| */
 
 
-
+.hamburger{
+    display: none;
+}
 .header-box{
     display: flex;
     align-items: center;
@@ -89,7 +91,7 @@ a{
 /* |||BANNER STARTS||| */
 
 .banner-bg {
-    height: 100vh;
+    height: 92vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -166,7 +168,7 @@ a{
 
 .kanoon-area{
     background-color: var(--kanoon-bg-clr);
-    padding: 80px;
+    padding: 90px;
     text-align: center;
 }
 .kanoon-box{

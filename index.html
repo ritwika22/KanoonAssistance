@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <div id="loader">
@@ -22,6 +23,28 @@
 
 <body>
     <header>
+
+        <div class="hamburger">
+            <div class="logo">
+                <a href="#home">
+                    <h2>KANOON ASSISTANCE</h2>
+                </a>
+            </div>
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Bare Acts and Case Laws</a>
+                <a href="#">Websites</a>
+                <a href="#">Consult an Advocate</a>
+                <a href="#">Make an Appointment</a>
+            </div>
+
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+            </div>
+        </div>
+
         <div class="header-box">
             <div class="logo">
                 <a href="#home">
@@ -31,11 +54,11 @@
             <nav>
                 <ul class="head-nav-list">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about"> About us</a></li>
-                    <li><a href="#bare"> Bare Acts and case laws</a></li>
+                    <li><a href="#about"> About Us</a></li>
+                    <li><a href="#bare"> Bare Acts and Case Laws</a></li>
                     <li><a href="#websites"> Websites</a></li>
                     <li><a href="#contact">Consult an Advocate</a></li>
-                    <li><a href="#contact">Make an appointment</a></li>
+                    <li><a href="#contact">Make an Appointment</a></li>
                 </ul>
             </nav>
         </div>
@@ -560,6 +583,18 @@
             pagination: true,
         });
         splide2.mount();
+    </script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "100%";
+            document.getElementById("main").style.opacity = "0";
+        }
+
+        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.opacity = "1";
+        }
     </script>
     <script src="js/script.js"></script>
 </body>

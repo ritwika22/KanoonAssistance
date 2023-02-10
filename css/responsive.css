@@ -155,8 +155,12 @@
     }
 
 
-    .service-area{
+    /* .service-area{
         display: none;
+    } */
+
+    .service-box{
+        width: 90%;
     }
 
     .choose-area{

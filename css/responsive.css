@@ -1,4 +1,5 @@
 @media (max-width:430px) {
+
     .header-box {
         display: none;
     }
@@ -78,7 +79,7 @@
     #main {
         transition: opacity .5s;
         /* If you want a transition effect */
-        padding: 20px;
+        /* padding: 20px; */
     }
 
 
@@ -136,7 +137,8 @@
         grid-template-columns: 1fr;
         margin-top: 60px;
     }
-    .offer-area>h3{
+    .offer-area>h3,
+    .service-area>h3{
         font-size: 30px;
     }
     .offer-area>h3::after{
@@ -168,7 +170,7 @@
         flex-direction: column;
     }
     .choose-box{
-        width: 100%;
+        width: inherit;
         padding: 20px;
     }
     .choose-box>h5{
@@ -184,7 +186,7 @@
         margin-top: 10px;
     }
     .form-box{
-        width: 100%;
+        width: inherit;
         padding: 20px;
     }
     .form-box>h5{
@@ -206,5 +208,20 @@
     }
     .chat-box>a>i{
         font-size: 20px;
+    }
+
+
+    .footer-box{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .mid-sec{
+        margin: 0;
+    }
+    footer>p{
+        font-size: 12px;
+    }
+    .splide{
+        padding: 0;
     }
 }

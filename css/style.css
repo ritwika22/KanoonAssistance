@@ -57,6 +57,7 @@ a{
     display: flex;
     list-style-type: none;
     margin: 20px 0;
+    padding-left: 0;
 }
 
 .head-nav-list>li>a{
@@ -404,6 +405,9 @@ a{
     /* grid-template-columns: 1fr 1fr 1fr; */
     /* gap: 20px; */
     /* margin-bottom: 70px; */
+}
+.splide2 .splide__list{
+    margin-bottom: 60px !important;
 }
 .white-box{
     background-color: var(--white-color);

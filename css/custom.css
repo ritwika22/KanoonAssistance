@@ -1,0 +1,166 @@
+/* ||||| STUDENT CORNER PAGE ||||||| */
+
+
+/* **** Header **** */
+
+
+.header-box{
+    background-color: var(--white-color);
+    position: relative;
+}
+
+.logo h2{
+    color: var(--secondary-color);
+}
+
+.head-nav-list>li>a{
+    color: var(--grey-color);
+}
+.head-nav-list>li>a:hover{
+    color: var(--primary-color);
+}
+.head-nav-list>li>a::before{
+    background-color: var(--primary-color);
+}
+
+
+
+/* **** Student Sec **** */
+
+
+.student-sec{
+    position: relative;
+}
+.student-sec::before{
+    position: absolute;
+    content: url(../images/2.png);
+    z-index: 9;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+.student-sec::after{
+    position: absolute;
+    content: url(../images/1.png);
+    z-index: 9;
+    left: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+.student-area{
+    position: relative;
+    background-image: url(../images/header_bg.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0px;
+    padding: 155px 140px;
+}
+.student-area::before{
+    position: absolute;
+    content: "";
+    background: #131137;
+    width: 70%;
+    height: 100%;
+    opacity: 1;
+    top: 0;
+    left: 0;
+}
+.student-area>.container{
+    position: relative;
+    padding-left: 160px;
+}
+.container>h2{
+    color: var(--white-color);
+    font-size: 65px;
+    margin: 0;
+    font-weight: 500;
+}
+.page-list{
+    list-style-type: none;
+    padding: 20px 30px 20px 70px;
+    margin-bottom: 0;
+    margin-top: 25px;
+    list-style: none;
+    display: inline-block;
+    background: #1A1744;
+    position: relative;
+    z-index: 10;
+}
+.page-list>li{
+    display: inline-block;
+    padding: 0 5px;
+    color: var(--white-hover-color);
+    position: relative;
+}
+.page-list>li>a{
+    color: var(--white-color);
+    text-decoration: none;
+}
+.page-list li:first-child::after{
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 1px;
+    background: #D58F76;
+    left: -40px;
+    top: 13px;
+}
+.page-list li:nth-child(2):before{
+    content: "\f105";
+    font-family: "FontAwesome";
+    font-size: 10px;
+    padding: 0px 10px;
+    color: var(--white-color);
+}
+
+
+
+/* **** Bare Acts **** */
+
+
+
+.bare-act-area{
+    background-color: var(--kanoon-bg-clr);
+    padding: 60px 50px;
+}
+.bare-act-area>h3{
+    font-size: 41px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+    font-family: 'Cinzel';
+    position: relative;
+    color: var(--secondary-color);
+    margin-top: 0;
+}
+.bare-act-area>h3::after{
+    content: "";
+    display: block;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 70px;
+}
+.bare-act-area>table{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-collapse: collapse;
+}
+table th{
+    background-color: var(--primary-color);
+    padding: 13px;
+    border: 1px solid var(--grey-color);
+    color: var(--white-color);
+    font-size: 17px;
+    font-weight: 500;
+}
+table td{
+    padding: 8px;
+    border: 1px solid var(--grey-color);
+    text-align: center;
+    color: var(--secondary-color);
+}

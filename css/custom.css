@@ -59,7 +59,7 @@
 .student-area::before{
     position: absolute;
     content: "";
-    background: #131137;
+    background-image: linear-gradient(to right, #131137 97%, transparent);
     width: 70%;
     height: 100%;
     opacity: 1;
@@ -163,4 +163,9 @@ table td{
     border: 1px solid var(--grey-color);
     text-align: center;
     color: var(--secondary-color);
+}
+
+.download{
+    color: var(--secondary-color);
+    font-size: 25px;
 }

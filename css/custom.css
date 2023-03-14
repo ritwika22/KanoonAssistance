@@ -169,3 +169,57 @@ table td{
     color: var(--secondary-color);
     font-size: 25px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.website-area{
+    padding: 80px 50px;
+    background-color: var(--kanoon-bg-clr);
+}
+.website-area>h3{
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+    font-family: 'Cinzel';
+    position: relative;
+    color: var(--secondary-color);
+    margin-top: 0;
+}
+.website-area>h3::after{
+    content: "";
+    display: block;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 70px;
+}
+.website-area table{
+    margin: 40px auto;
+    width: 60%;
+    border-collapse: collapse;
+}
+.website-area th{
+    /* border: none; */
+    background-color:#8f3737;
+    /* color: #000; */
+}
+.website-area td{
+    /* border: none; */
+    padding: 10px;
+    /* background-color: #131137; */
+}
+.website-area tr:nth-child(odd){
+    /* background-color: #bdb9b7; */
+}

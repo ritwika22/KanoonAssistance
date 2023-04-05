@@ -1,6 +1,8 @@
 /* /// For 1400px Screen/// */
 
-
+*{
+    /* border: 1px solid red; */
+}
 
 /* |||||||||| HOME PAGE|||||||||| */
 
@@ -623,5 +625,7 @@
         width: 100%;
         margin-top: 60px;
     }
-
+    .student-sec::before{
+        width: 80%;
+    }
 }

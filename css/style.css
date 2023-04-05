@@ -80,10 +80,12 @@ a{
     left: -10px;
     transition: 0.3s;
 }
-.head-nav-list>li>a:hover::before{
+.head-nav-list>li>a:hover::before,
+.head-nav-list>li>.active-page::before{
     width: 30px;
 }
-.head-nav-list>li>a:hover{
+.head-nav-list>li>a:hover,
+.head-nav-list>li>.active-page{
     color: var(--hover-color);
 }
 

@@ -41,8 +41,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--primary-color);
-    position: fixed;
+    background-color: var(--white-color);
+    /* position: fixed; */
     z-index: 9;
     width: 100%;
 }
@@ -50,10 +50,19 @@ a{
     text-decoration: none;
 }
 .logo h2{
-    color: var(--white-color);
+    color: var(--secondary-color);
     margin: 20px 0;
     font-family: 'Cinzel';
     font-size: 30px;
+}
+marquee{
+    color:var(--base-color);
+    font-weight: 500;
+}
+.header-box a{
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 500;
 }
 .head-nav-list{
     display: flex;
@@ -95,8 +104,34 @@ a{
 
 /* |||BANNER STARTS||| */
 
+
+
+.banner-sec{
+    position: relative;
+}
+.nav-list{
+    padding: 0 82px;
+}
+.nav-list:nth-child(2){
+    padding: 0 30px;
+}
+.nav-items{
+    position: absolute;
+    top: 50px;
+    z-index: 58;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.home-nav{
+    flex-direction: column;
+    gap: 20px;
+}
+.mob-marq{
+    display: none;
+}
 .banner-bg {
-    height: 92vh;
+    height: 62vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -130,10 +165,11 @@ a{
 
 .arrow-div {
     position: absolute;
-    bottom: 50%;
+    bottom: 20%;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    display: none;
 }
 
 .circle {
@@ -803,6 +839,7 @@ footer>p>a{
 footer .logo h2{
     margin-top: 0;
     margin-bottom: 5px;
+    color: var(--white-color);
 }
 .left-sec>h4{
     color: var(--hover-color);

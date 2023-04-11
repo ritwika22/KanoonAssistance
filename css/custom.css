@@ -39,6 +39,7 @@ header {
 
 .student-sec {
     position: relative;
+    overflow: hidden;
 }
 
 .student-sec::before {
@@ -260,6 +261,7 @@ table td {
     padding: 15px 10px;
     font-weight: 500;
     border: none;
+    line-break: anywhere;
     /* background-color: #131137; */
 }
 
@@ -422,4 +424,24 @@ table td {
     color: #E4D693;
     font-size: 50px;
     line-height: 1.8;
+}
+
+
+
+
+
+/* ||||| SERVICES PAGE ||||||| */
+
+
+
+
+.service-offer{
+    background-image: unset;
+    background-color: var(--kanoon-bg-clr);
+}
+.service-offer h3{
+    color: var(--secondary-color);
+}
+.service-offer h3::after{
+    background-color: var(--primary-color);
 }
